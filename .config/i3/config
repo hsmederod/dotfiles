@@ -193,7 +193,6 @@ bar {
 		inactive_workspace	$inactive-bg-color	$inactive-bg-color	$inactive-text-color
 		urgent_workspace	$urgent-bg-color	$urgent-bg-color	$text-color
 	}
-		
 }
 
 bindsym $mod+shift+x exec ~/i3lockpp/i3lock++ spread
