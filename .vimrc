@@ -21,6 +21,7 @@ Plugin 'sjl/badwolf'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'Shougo/vimproc'
 Plugin 'Quramy/tsuquyomi'
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
