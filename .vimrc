@@ -18,6 +18,9 @@ Plugin 'LucHermitte/lh-vim-lib'
 Plugin 'LucHermitte/lh-brackets'
 Plugin 'morhetz/gruvbox'
 Plugin 'sjl/badwolf'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'Shougo/vimproc'
+Plugin 'Quramy/tsuquyomi'
 
 call vundle#end()
 
@@ -25,6 +28,7 @@ syntax on
 filetype plugin indent on
 
 au BufNewFile,BufRead *.yml set ts=2 sw=2 expandtab
+au BufNewFile,BufRead *.ts set ts=2 sw=2 expandtab
 au BufNewFile,BufRead *.py set ts=4 sw=4 expandtab
 
 " highlight trailing whitespace,
@@ -53,7 +57,14 @@ set smartcase
 set incsearch
 set showmatch
 
-
 " Disable markers used by lh-brackets
 let b:usemarks = 0
+
+" TypeScript Stuff
+let g:typescript_compiler_binary = 'tsc'
+let g:typescript_compiler_options = ''
+autocmd QuickFixCmdPost [^l]* nested cwindow
+autocmd QuickFixCmdPost    l* nested lwindow
+
 map <C-n> :NERDTreeToggle<CR>
+
