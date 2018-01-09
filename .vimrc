@@ -70,3 +70,7 @@ autocmd QuickFixCmdPost    l* nested lwindow
 
 map <C-n> :NERDTreeToggle<CR>
 
+augroup autosourcing
+	autocmd!
+	autocmd BufWritePost .vimrc source %
+augroup end
