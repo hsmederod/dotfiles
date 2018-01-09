@@ -7,6 +7,7 @@ call vundle#begin()
 " Let Vundle handle Vundle
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'wincent/terminus'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
