@@ -138,6 +138,7 @@ assign [class="discord"] $workspace9
 assign [class="Spotify"] $workspace10
 # # Specials for Spotify, move after window hints been set
 for_window [class="Spotify"] move to workspace $workspace10
+for_window [class="Keepassx"] move to workspace $workspace5
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
