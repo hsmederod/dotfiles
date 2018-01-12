@@ -229,6 +229,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Start these programs automatically
+exec signal-desktop
 exec spotify
 exec_always compton
 exec_always xrandr --dpi 109
