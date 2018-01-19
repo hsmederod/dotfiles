@@ -233,6 +233,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Start these programs automatically
+exec dropbox start
 exec signal-desktop
 exec spotify
 exec_always compton
