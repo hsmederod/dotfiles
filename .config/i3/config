@@ -245,6 +245,7 @@ exec_always xrandr --dpi 109
 exec killall -q notify-osd
 exec dunst -config ~/.config/dunst/dunst
 
+# Network manager
 exec --no-startup-id nm-applet
 
 # Set wallpaper
