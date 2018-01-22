@@ -30,6 +30,7 @@ syntax on
 filetype plugin indent on
 
 au BufNewFile,BufRead *.yml set ts=2 sw=2 expandtab
+au BufNewFile,BufRead *.yaml set ts=2 sw=2 expandtab
 au BufNewFile,BufRead *.ts set ts=2 sw=2 expandtab
 au BufNewFile,BufRead *.py set ts=4 sw=4 expandtab
 
