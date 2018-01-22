@@ -33,6 +33,7 @@ au BufNewFile,BufRead *.yml set ts=2 sw=2 expandtab
 au BufNewFile,BufRead *.yaml set ts=2 sw=2 expandtab
 au BufNewFile,BufRead *.ts set ts=2 sw=2 expandtab
 au BufNewFile,BufRead *.py set ts=4 sw=4 expandtab
+au BufNewFile,BufRead *.php set ts=4 tw=4 noexpandtab
 
 " highlight trailing whitespace,
 " http://vim.wikia.com/wiki/Highlight_unwanted_spaces
