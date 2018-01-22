@@ -241,6 +241,10 @@ exec spotify
 exec_always compton
 exec_always xrandr --dpi 109
 
+# Notifications
+exec killall -q notify-osd
+exec dunst -config ~/.config/dunst/dunst
+
 exec --no-startup-id nm-applet
 
 # Set wallpaper
