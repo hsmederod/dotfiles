@@ -235,6 +235,26 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+# Switch between display layouts
+set $displayMode "Set display mode: [l]aptop, [h]dmi, [b]oth"
+bindsym XF86Display mode $displayMode
+mode $displayMode {
+		bindsym l exec "\
+			~/.screenlayout/single.sh && \
+			xrandr --dpi 109"; \
+			mode "default"
+		bindsym h exec "\
+			~/.screenlayout/hdmi-hd.sh && \
+			xrandr --dpi 96"; \
+			mode "default"
+		bindsym b exec "\
+			~/.screenlayout/laptop-hdmihd.sh && \
+			xrandr --dpi 96"; \
+			mode "default"
+		bindsym Return mode "default"
+		bindsym Escape mode "default"
+	}
+
 # Start these programs automatically
 exec dropbox start
 exec signal-desktop
