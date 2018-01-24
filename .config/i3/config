@@ -181,7 +181,7 @@ set $inactive-text-color	#676e7d
 set $urgent-bg-color		#e53935
 
 # start rofi
-bindsym $mod+d exec rofi -show run -lines 5 -eh 2 -width 100 -padding 550 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Fransisco Display 18"
+bindsym $mod+d exec rofi -show run -lines 5 -eh 2 -width 100 -padding 486 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Fransisco Display 18"
 
 # Window colors
 #						border				background			text					indicator
